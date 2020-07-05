@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\newcommand{\custombold}[1]{
+	#1
+}
+
+\colorlet{SECTIONTITLECOLOR}{RoyalBlue}
+\let\sectionold\section
+\renewcommand{\section}[1]{
+	\sectionold{\textcolor{sectiontitlecolor}{#1}}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{\textcolor{RoyalBlue}{William Ma}}{ \urlstyle{same}\url{https://github.com/whoiswillma} \\
+wm274@cornell.edu | (845) 243-0640
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Cornell University}
+
+\descript{BS, Computer Science}
+\location{Expected May 2022 | Ithaca, NY}
+College of Engineering \\
+Dean's List (3 semesters) \\
+\location{ GPA: 4.2 }
+\sectionsep
+
+\subsection{Arlington High School}
+\location{2014 - 2018 | Lagrangeville, NY}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Computer Science}
+\textbf{Analysis of Algorithms}, Object-Oriented Design and Data Structures, Theory of Computing, \textbf{Functional Programming}, Discrete Structures
+\sectionsep
+
+\subsection{Business}
+Financial and Managerial Accounting, Macroeconomics
+\sectionsep
+
+\subsection{Mathematics}
+Multivariable Calculus, Linear Algebra
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\subsection{Extremely Proficient With}
+\textit{Languages:} \textbf{Swift}, Java, OCaml \\
+\textit{Tools:} Xcode, UIKit, Animations with UIKit, \textbf{Core Data}, Core Location, MapKit, \LaTeX{}, Git, Vim, Ubuntu
+\sectionsep
+\subsection{Have Experience With}
+\textit{Languages:} Objective C, Python, Verilog, HTML, CSS \\
+\textit{Tools:} Android Studio, Web Development, Nginx, ESXi VMware
+\sectionsep
+
+\section{Activites}
+\subsection{Glee Club}
+Striving for musical excellence, the Glee Club fosters a family of tenors and basses through the creation of memorable, musical moments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects / iOS}
+
+\runsubsection{Eatery}
+\descript{Find eateries on Cornell's campus}
+\location{Fall 2018 -- Present $\mid$ iOS Developer / Lead for Eatery}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \textbf{Helped grow user base by 20 \% over past year}
+\item \textbf{7.2k Monthly Active Users}, 2.5k Daily Active Users
+\item Architected a large feature: Collegetown Eateries
+\item Implemented design changes; refactor legacy UI code into more modular components
+\item Worked on a team with iOS, Android, and backend developers, as well as designers and marketers
+\\
+\item \textcolor{darkgray}{\textit{Github: https://github.com/cuappdev/eatery}}  \\
+\item \textcolor{darkgray}{\textit{Technologies: \textbf{GraphQL}, Swift 4.2, UIKit, Apollo}} 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Cello Mute}
+\descript{The tools musicians need, all in one}
+\location{Summer 2016 -- Present | Independent iOS App}
+\begin{tightemize}
+\item \textbf{Musicianship App with 37K Downloads}
+\item Designed both the UI and the icons used throughout the app
+\item Performed market research on high school community.
+\item Illustrated marketing material used on the App Store.
+\\
+\item \textcolor{darkgray}{\textit{Github: https://github.com/whoiswillma/Cello-Mute}} 
+\item \textcolor{darkgray}{\textit{Technologies: \textbf{AudioKit}, UIKit animations}} 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Liloc}
+\descript{Life by Location}
+\location{Summer 2019 | Independent iOS App}
+\begin{tightemize}
+\item Extensive use of Core Data and related technologies
+\item Use of custom view controller transitions and animations, both interactive and non-interactive.
+\item Exploration of location-based APIs.
+\\
+\item \textcolor{darkgray}{\textit{Github: https://github.com/whoiswillma/Liloc}}
+\item \textcolor{darkgray}{\textit{Technologies: \textbf{Core Data}, \textbf{Core Location}, NSFetchedResultsController, Swift 5 }}
+\end{tightemize} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects / OCaml}
+
+\runsubsection{Course Scheduler}
+\descript{Plan a Cornell Semester}
+\location{Spring 2019 | CS 3110 Project}
+\begin{tightemize}
+\item Arranges a schedule from chosen courses
+\item Uses data from Cornell's API to schedule courses
+\item Select between a distributed or condensed schedule
+\\
+\item \textcolor{darkgray}{\textit{Github: https://github.com/whoiswillma/cs3110-s2019-scheduler}}
+\end{tightemize}
+\sectionsep
+
+\section{Projects / Java}
+
+\runsubsection{Critterworld}
+\descript{Simulating Evolving Artificial Life}
+\location{Fall 2018 | CS 2112 Project}
+\begin{tightemize}
+\item Parse arbitrarily complex AST from BNF specifications, apply transformations on the AST
+\item Coordinate multiple clients over networking API
+\item Designed a JavaFX GUI application with concurrency to view the state of the UI
+\\
+\item \textcolor{darkgray}{\textit{Technologies: Java FX, Java Concurrency and Networking, AST Parsing and Interpretation}}
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
