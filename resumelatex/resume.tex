@@ -89,10 +89,24 @@ wm274@cornell.edu | (845) 337-7521
 \begin{minipage}[t]{0.33\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\location{ I am an open-source contributor to a package manager for macOS, an experienced iOS developer working on an on-campus dining app, and an academic student interested in compilers, computability theory, and algorithms. }
+
+% \location{ I am an open-source contributor interested in developer tools and solid testing. I contributed to Homebrew by adding license information to nearly half of core Homebrew packages, and unified the commands of Homebrew and its sibling project, \texttt{brew cask} }
+
+% \location{ I am an experienced iOS developer and design enthusiast. I am a project manager and frontend developer for Eatery, an app used by 50\% of students at Cornell. }
+
+% \location{ I am interested in compilers, computability theory, and algorithmic theory. The Xi Compiler I helped build compiles a type-checked LALR language into x86 assembly with dataflow analysis-based optimizations. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{\textbf{Education}}
 
 \subsection{Cornell University}
 
@@ -105,7 +119,6 @@ Dean's List (3 semesters) \\
 
 \subsection{Arlington High School}
 \location{2014 - 2018 | Lagrangeville, NY}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
@@ -127,8 +140,6 @@ Financial and Managerial Accounting, Macroeconomics
 \subsection{Mathematics}
 Linear Algebra, Multivariable Calculus
 
-\sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,7 +150,6 @@ Swift, Java, OCaml, Xcode, UIKit, Animations with UIKit, Core Data, Core Locatio
 \sectionsep
 \subsection{Experienced}
 Objective C, Python, Verilog, HTML, CSS, Android Studio, Web Development, Nginx, VMware ESXi
-\sectionsep
 
 \section{Activites}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
@@ -168,42 +178,37 @@ Cornell University Glee Club
 \vspace{\topsep} % Hacky fix for awkward extra vertical space 
 \begin{tightemize}
 \item \textbf{Unified 8 brew and brew cask commands; Added cask support to 3 brew commands}
-\item \textbf{Added license information to 50\% (ct. \textasciitilde 2500) of homebrew-core packages}
+\item \textbf{Added license information to 50\% (ct. $\approx$ 2500) of homebrew-core packages}
 \item Part of the inaugural MLH Fellowship
 \item \textcolor{darkgray}{\textit{Github:} \myurl{https://github.com/homebrew}}
 \item \textcolor{darkgray}{\textit{Technologies:} Ruby, Rspec, DSLs}
 \end{tightemize}
-
-
-\sectionsep
-
-\section{Xi Compiler}
-\descript{Compiler for imperative language into x86 assembly}
-\descript{Spring 2020 for CS 4120}
-\begin{tightemize}
-\item \textbf{Implemented dataflow analysis optimizations: Register allocation}, copy propagation, dead code elimination, loop unrolling
-\item Lexing with JFlex, parsing with CUP, type-checking, syntax-directed IR generation, dataflow-based optimization, ASM generation with tiling
-\item \textcolor{darkgray}{\textit{Technologies:} Java, JFlex, CUP, JUnit testing, Gradle}
-\end{tightemize}
-
-\sectionsep
 
 \section{Eatery}
 \runsubsection{iOS Developer \& Project Manager} \\
 \descript{Find food at cornell}
 \descript{Fall 2018 \textemdash \ Present}
 \begin{tightemize}
-\item \textbf{Grew user base by 20 \% during 2019}
-\item \textbf{7.2k Monthly Active Users, 2.5k Daily Active Users} 
-\item Architected a large feature: Collegetown Eateries
-\item Implemented design changes; refactored legacy UI code into more modular components
-\item Worked on a team with iOS, Android, and backend developers, as well as designers and marketers
-\\
+\item \textbf{Grew user base by 20\% during 2019}
+\item \textbf{7,200 Monthly Active Users, 2,500 Daily Active Users} 
+\item Created interactive bar-chart view for Popular Times feature
+\item Architected and implemented a large feature: Collegetown Eateries
+\item Implemented design changes; refactored legacy UI code
+\item Collaborated on a team with iOS, Android, backend developers, as well as designers and marketers
 \item \textcolor{darkgray}{\textit{Github:} \myurl{https://github.com/cuappdev/eatery}}  \\
 \item \textcolor{darkgray}{\textit{Technologies:} iOS, Swift 4.2, UIKit, Apollo} 
 \end{tightemize}
 
-\sectionsep
+\section{Xi Compiler}
+\descript{Compiler for imperative language into x86 assembly}
+\descript{Spring 2020 for CS 4120}
+\begin{tightemize}
+\item \textbf{Implemented dataflow analysis optimizations: Register allocation, copy propagation, dead code elimination, loop unrolling}
+\item \textbf{Developed test suite with unit tests, performance tests, and integration tests.} Used code coverage tools throughout development.
+\item Built lexing with JFlex, parsing with CUP, type-checking, syntax-directed IR generation, dataflow-based optimization, ASM generation with tiling
+\item Used visitor pattern for AST to MIR to LIR translation
+\item \textcolor{darkgray}{\textit{Technologies:} Java, JUnit testing, Gradle, \texttt{gdb}, JFlex, CUP}
+\end{tightemize}
 
 \section{Cello Mute}
 \runsubsection{Independent iOS App} \\
@@ -235,11 +240,8 @@ Cornell University Glee Club
 \sectionsep
 \fi
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \iffalse
+%%%%%%%%%%%%%%%%%%%%%% COMMENTED OUT %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Course Scheduler}
 \descript{Plan a Cornell Semester}
 \descript{Spring 2019 | CS 3110 Project}
