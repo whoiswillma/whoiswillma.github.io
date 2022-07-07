@@ -16,6 +16,8 @@ Outside of technology, I keep up with competitive video games, make arrangements
 
 I’d love to chat – feel free to send me an email at [wm274@cornell.edu](mailto:wm274@cornell.edu).
 
+_I am actively looking for software engineering positions to start in January 2023!_
+
 ---
 
 ### Experience
