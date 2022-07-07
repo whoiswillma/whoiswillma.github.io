@@ -10,7 +10,7 @@ title: "Home"
 
 # Hi, my name is William 👋
 
-I'm an Augmented Reality Research Intern at Bosch. I enjoy solving problems in systems and natural language, and I have a fondness for interesting visualizations and clever math as well.
+I'm an Augmented Reality Research Intern at Bosch. I enjoy solving problems in systems and natural language, and I have a particular fondness for interesting visualizations and clever math as well.
 
 Outside of technology, I keep up with competitive video games, make arrangements of my favorite songs, and dabble in recreational mathematics.
 
