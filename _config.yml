@@ -1,9 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "William Ma" # the name of your site, e.g. ACME Corp.
-description: "William Ma's Personal Website"
 author:
-    email: "whoiswillma@gmail.com"
+    email: "wm274@cornell.edu"
 social:
     github: "whoiswillma"
     instagram: "whoiswillma"
