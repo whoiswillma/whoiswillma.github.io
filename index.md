@@ -32,5 +32,6 @@ _I am actively looking for software engineering positions to start in January 20
 
  * M.Eng Computer Science @ Cornell '22
  * B.S. Computer Science @ Cornell '21, Summa Cum Laude
+ * Minor in Mathematics @ Cornell '21
 
 I'm an alum of the [Cornell University Glee Club](https://www.gleeclub.com).
