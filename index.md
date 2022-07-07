@@ -18,6 +18,14 @@ I’d love to chat – feel free to send me an email at [wm274@cornell.edu](mail
 
 ---
 
+### Experience
+
+ * AR / NLP Research Intern @ Bosch Research
+ * Systems / PL Research @ Cornell
+ * NLP Research @ Cornell
+ * iOS Developer / Pod Lead @ Cornell AppDev
+ * Open-source Contributor @ Homebrew
+
 ### Education
 
  * M.Eng Computer Science @ Cornell '22
