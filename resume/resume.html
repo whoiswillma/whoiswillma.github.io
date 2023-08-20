@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>William Ma - Resume</title>
+  <style>
+    * {
+      font-family: "Helvetica Neue";
+      font-size: medium;
+      margin: 0px;
+      line-height: 1.2;
+    }
+
+    #page {
+      border: 1px solid #aaa;
+      height: 11in;
+      width: 8.5in;
+      margin: 0.5in auto 0.5in auto;
+      box-shadow: 0.1in 0.1in #ccc;
+      padding: 0.5in;
+    }
+
+    #header {
+      align-items: last baseline;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #header ul {
+      list-style-type: none;
+      text-align: right;
+    }
+
+    #header #links a {
+      color: #0076BA;
+      font-family: "Menlo", monospace;
+      font-size: small;
+    }
+
+    #body {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    #body .col-1 {
+      /* border: 1px solid orange; */
+      width: 55%;
+    }
+
+    #body .col-2 {
+      /* border: 1px solid blue; */
+      width: 45%;
+    }
+
+    h1 {
+      color: black;
+      font-size: xx-large;
+    }
+
+    h2 {
+      color: #0076BA;
+      font-size: x-large;
+      margin-top: 10px;
+    }
+
+    h3 {
+      color: #222;
+      font-size: larger;
+    }
+
+    h4 {
+      font-family: "Menlo", monospace;
+      font-size: small;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+
+    #body ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    #body ul li {
+      margin-bottom: 2px;
+    }
+
+    .feather-external-link {
+      width: 12px;
+      height: 12px;
+      padding-left: 4px;
+    }
+
+    .section-item {
+      margin-top: 5px;
+    }
+
+    .section-item h3 {
+      display: inline;
+    }
+
+    #body a {
+      color: black;
+      text-decoration: none;
+    }
+
+    #body a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    @media print {
+      #page {
+        border: none;
+        margin: 0in;
+        box-shadow: none;
+        padding: 0in;
+      }
+    }
+  </style>
+</head>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<body>
+  <div id="page">
+    <div id="content">
+      <div id="header">
+        <h1>William Ma</h1>
+        <ul id="links">
+          <li><a href="https://www.linkedin.com/in/william-ma-156ba4137/">LinkedIn</a></li>
+          <li><a href="https://williamma.dev/">williamma.dev</a></li>
+          <li><a href="mailto:wm274@cornell.edu">wm274@cornell.edu</a></li>
+        </ul>
+      </div>
+      <div id="body">
+        <div class="col-1">
+          <div id="section-education">
+            <h2>Education</h2>
+            <div class="section-item education-item">
+              <h3>Cornell University</h3>
+              <h4>Jan 2022 - May 2022</h4>
+              <ul>
+                <li>M.Eng. Computer Science</li>
+                <li>GPA 4.3 / 4.3</li>
+              </ul>
+            </div>
+            <div class="section-item education-item">
+              <h3>Cornell University</h3>
+              <h4>Aug 2018 - Dec 2021</h4>
+              <ul>
+                <li>B.S. Computer Science, Summa Cum Laude</li>
+                <li>Minor in Mathematics</li>
+                <li>GPA 4.2 / 4.3</li>
+              </ul>
+            </div>
+          </div>
+          <div id="section-experience">
+            <h2>Experience</h2>
+            <div class="section-item experience-item">
+              <h3>Software Engineer</h3> @ Juniper Networks
+              <h4>Nov 2022 - Present</h4>
+              <ul>
+                <li>Developed tool to generate and measure throughput of line-rate traffic on device</li>
+                <li>Created tools to manage internal processes for team</li>
+                <li>Intern manager for Summer 2023</li>
+              </ul>
+            </div>
+            <div class="section-item experience-item">
+              <h3>AR & NLP Research Intern</h3> @ Bosch
+              <h4>Jun 2022 - Oct 2022</h4>
+              <ul>
+                <li>Defined user study to evaluate novel interaction in augmented reality</li>
+                <li>Trained and deployed n-gram language models</li>
+              </ul>
+            </div>
+            <div class="section-item experience-item">
+              <a href="https://harmony.cs.cornell.edu">
+                <h3>Systems Research</h3> @ Cornell<i data-feather="external-link"></i>
+              </a>
+              <h4>Sep 2021 - May 2022</h4>
+              <ul>
+                <li>Parallelized model checker in C</li>
+                <li>Developed technique for efficient verification of programs used in Operating Systems course</li>
+              </ul>
+            </div>
+            <div class="section-item experience-item">
+              <a href="https://github.com/whoiswillma/nlp-experiments">
+                <h3>NLP Research</h3> @ Cornell<i data-feather="external-link"></i>
+              </a>
+              <h4>Jan 2021 - Dec 2021</h4>
+              <ul>
+                <li>Developed PyTorch training and evaluation pipelines for language models</li>
+                <li>Researched named-entity recognition</li>
+              </ul>
+            </div>
+            <div class="section-item experience-item">
+              <a href="https://github.com/Homebrew/brew/pulls?q=author:whoiswillma+">
+                <h3>Open-Source Contributor</h3> @ Homebrew<i data-feather="external-link"></i>
+              </a>
+              <h4>May 2020 - Aug 2020</a>
+              </h4>
+              <ul>
+                <li>Implemented web scraper to add license information to 2500 homebrew-core packages</li>
+                <li>Addressed long-standing user confusion by merging 8 similar commands</li>
+              </ul>
+            </div>
+            <div class="section-item experience-item">
+              <a href="https://github.com/cuappdev/eatery-ios">
+                <h3>iOS Developer</h3> @ Cornell AppDev<i data-feather="external-link"></i>
+              </a>
+              <h4>Sep 2018 - Dec 2020</h4>
+              <ul>
+                <li>Grew Eatery userbase by 20% over 2019</li>
+                <li>Contributed 83 pull requests</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div id="section-projects">
+            <h2>Projects</h2>
+            <div class="section-item projects-item">
+              <a href="https://github.com/whoiswillma/cs5625-final-project">
+                <h3>OceanScene</h3> / Real-Time Rendering<i data-feather="external-link"></i>
+              </a>
+              <h4>Spring 2022</h4>
+              <ul>
+                <li>Built multi-stage deferred rendering pipeline in OpenGL using C++</li>
+                <li>Implemented Tessendorf ocean simulation based on inverse FFT</li>
+              </ul>
+            </div>
+            <div class="section-item projects-item">
+              <a href="https://github.com/whoiswillma/swift-harmony/blob/master/SharmPaper.pdf">
+                <h3>Sharm</h3> / Systems Research Project<i data-feather="external-link"></i>
+              </a>
+              <h4>Fall 2021</h4>
+              <ul>
+                <li>Implemented, profiled, and benchmarked interpreter and source-to-source compiler in Swift</li>
+              </ul>
+            </div>
+            <div class="section-item projects-item">
+              <a href="https://github.com/kabirwalia8300/TriBlank-paper/blob/main/TRIBLANK.pdf">
+                <h3>TriBlank</h3> / NLP Research Project<i data-feather="external-link"></i>
+              </a>
+              <h4>Spring 2021</h4>
+              <ul>
+                <li>Experimented on novel transformer-based model for relation extraction</li>
+              </ul>
+            </div>
+            <div class="section-item projects-item">
+              <h3>Xi</h3> / Compiler
+              <h4>Spring 2020</h4>
+              <ul>
+                <li>Parsed context-free grammar</li>
+                <li>Implemented dataflow analysis and optimizations, including register allocation</li>
+                <li>Developed test framework with unit, performance, and integration tests</li>
+              </ul>
+            </div>
+            <div class="section-item projects-item">
+              <a href="https://github.com/whoiswillma/Cello-Mute">
+                <h3>Cello Mute</h3> / iOS App<i data-feather="external-link"></i>
+              </a>
+              <h4>2016 - 2018</h4>
+              <ul>
+                <li>Independently developed iOS app for musicians</li>
+                <li>39K downloads</li>
+              </ul>
+            </div>
+          </div>
+          <div id="section-skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>Python, PyTorch, Transformers, Swift, iOS App Development, Java, C++</li>
+            </ul>
+          </div>
+          <div id="section-coursework">
+            <h2>Coursework</h2>
+            <ul>
+              <li>Compilers, Computer Graphics, Computer Vision, Embedded Systems, Formal Verification, Natural Language
+                Processing, Operating Systems, Quantum Computing, Software Defined Networking</li>
+              <li>Differential Equations, Linear Algebra, Number Theory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>feather.replace();</script>
+
+</html>
