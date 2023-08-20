@@ -12,11 +12,33 @@
     }
 
     #page {
+      margin: 0.5in auto 0 auto;
+      width: 8.5in;
+    }
+
+    #pdf-download {
+      border: 1px solid;
+      border-radius: 5px;
+      color: #0076ba;
+      text-decoration: none;
+      font-family: "Menlo", monospace;
+      font-size: 1em;
+      padding: 5px;
+    }
+
+    #pdf-download .feather-file-text {
+      width: 1em;
+      height: 1em;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #content {
+      margin: 0.1in auto 0.1in auto;
       border: 1px solid #aaa;
+      box-shadow: 0.1in 0.1in #ccc;
       height: 11in;
       width: 8.5in;
-      margin: 0.5in auto 0.5in auto;
-      box-shadow: 0.1in 0.1in #ccc;
       padding: 0.5in;
     }
 
@@ -32,7 +54,7 @@
     }
 
     #header #links a {
-      color: #0076BA;
+      color: #0076ba;
       font-family: "Menlo", monospace;
       font-size: small;
     }
@@ -59,9 +81,9 @@
     }
 
     h2 {
-      color: #0076BA;
+      color: #0076ba;
       font-size: x-large;
-      margin-top: 10px;
+      margin-top: 5px;
     }
 
     h3 {
@@ -111,10 +133,18 @@
 
     @media print {
       #page {
+        margin: 0;
+      }
+
+      #content {
         border: none;
-        margin: 0in;
+        margin: 0;
         box-shadow: none;
-        padding: 0in;
+        padding: 0;
+      }
+
+      .print-hidden {
+        display: none;
       }
     }
   </style>
@@ -123,6 +153,9 @@
 
 <body>
   <div id="page">
+    <div class="print-hidden">
+      <a id="pdf-download" href="resume.pdf" download><i data-feather="file-text"></i>Download PDF</a>
+    </div>
     <div id="content">
       <div id="header">
         <h1>William Ma</h1>
