@@ -3,162 +3,22 @@
 
 <head>
   <title>William Ma - Resume</title>
-  <style>
-    * {
-      font-family: "Helvetica Neue";
-      font-size: medium;
-      margin: 0px;
-      line-height: 1.2;
-    }
-
-    #page {
-      margin: 0.5in auto 0 auto;
-      width: 8.5in;
-    }
-
-    #pdf-download {
-      border: 1px solid;
-      border-radius: 5px;
-      color: #0076ba;
-      text-decoration: none;
-      font-family: "Menlo", monospace;
-      font-size: 1em;
-      padding: 5px;
-    }
-
-    #pdf-download .feather-file-text {
-      width: 1em;
-      height: 1em;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    #content {
-      margin: 0.1in auto 0.1in auto;
-      border: 1px solid #aaa;
-      box-shadow: 0.1in 0.1in #ccc;
-      height: 11in;
-      width: 8.5in;
-      padding: 0.5in;
-    }
-
-    #header {
-      align-items: last baseline;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    #header ul {
-      list-style-type: none;
-      text-align: right;
-    }
-
-    #header #links a {
-      color: #0076ba;
-      font-family: "Menlo", monospace;
-      font-size: small;
-    }
-
-    #body {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    #body .col-1 {
-      /* border: 1px solid orange; */
-      width: 55%;
-    }
-
-    #body .col-2 {
-      /* border: 1px solid blue; */
-      width: 45%;
-    }
-
-    h1 {
-      color: black;
-      font-size: xx-large;
-    }
-
-    h2 {
-      color: #0076ba;
-      font-size: x-large;
-      margin-top: 5px;
-    }
-
-    h3 {
-      color: #222;
-      font-size: larger;
-    }
-
-    h4 {
-      font-family: "Menlo", monospace;
-      font-size: small;
-      font-weight: normal;
-      margin-top: 5px;
-    }
-
-    #body ul {
-      margin-top: 5px;
-      padding-left: 20px;
-    }
-
-    #body ul li {
-      margin-bottom: 2px;
-    }
-
-    .feather-external-link {
-      width: 12px;
-      height: 12px;
-      padding-left: 4px;
-    }
-
-    .section-item {
-      margin-top: 5px;
-    }
-
-    .section-item h3 {
-      display: inline;
-    }
-
-    #body a {
-      color: black;
-      text-decoration: none;
-    }
-
-    #body a:hover {
-      color: black;
-      text-decoration: underline;
-    }
-
-    @media print {
-      #page {
-        margin: 0;
-      }
-
-      #content {
-        border: none;
-        margin: 0;
-        box-shadow: none;
-        padding: 0;
-      }
-
-      .print-hidden {
-        display: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="resume.css">
 </head>
 <script src="https://unpkg.com/feather-icons"></script>
 
 <body>
   <div id="page">
-    <div class="print-hidden">
+    <div class="print-hidden" id="menu-bar">
       <a id="pdf-download" href="William-Ma-Resume.pdf" download><i data-feather="file-text"></i>Download PDF</a>
     </div>
     <div id="content">
       <div id="header">
-        <h1>William Ma</h1>
+        <div>
+          <h1>William Ma</h1> 
+          <h3><i data-feather="map-pin"></i>Sunnyvale, CA</h3>
+          <h3><i data-feather="user"></i>he/they</h3>
+        </div>
         <ul id="links">
           <li><a href="https://www.linkedin.com/in/william-ma-156ba4137/">LinkedIn</a></li>
           <li><a href="https://williamma.dev/">williamma.dev</a></li>
