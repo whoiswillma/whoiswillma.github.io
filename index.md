@@ -10,16 +10,17 @@ title: "Home"
 
 # Hi, my name is William 👋
 
-I am a Software Engineer at Juniper Networks. I enjoy solving problems in systems and natural language, and I have a particular fondness for interesting visualizations and clever math as well.
+I am a backend software engineer at Ramp. I enjoy tackling problems in (operating/distributed) systems and (programming/natural) languages, and I have a particular fondness for interesting visualizations and clever math.
 
 Outside of technology, I keep up with competitive video games, make arrangements of my favorite songs, and dabble in recreational mathematics.
 
-I’d love to chat – feel free to send me an email at [wm274@cornell.edu](mailto:wm274@cornell.edu).
+I’d love to chat – send me an email at [wm274@cornell.edu](mailto:wm274@cornell.edu).
 
 ---
 
 ### Experience
 
+ * Senior Software Engineer @ Ramp
  * Software Engineer @ Juniper Networks
  * AR Research Intern @ Bosch Research
  * Systems / PL Research @ Cornell
@@ -34,4 +35,4 @@ I’d love to chat – feel free to send me an email at [wm274@cornell.edu](mail
  * Minor in Mathematics @ Cornell '21
  * Arlington High School '18
 
-I'm an alum of the [Cornell University Glee Club](https://www.gleeclub.com).
+__I'm an alum of the [Cornell University Glee Club](https://www.gleeclub.com).__
